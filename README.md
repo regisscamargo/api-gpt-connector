@@ -8,7 +8,7 @@ A API desenvolvida neste projeto é uma ferramenta de integração com os modelo
 
 ## Funcionalidades
 
-- **Envio de Perguntas:** Os usuários podem enviar perguntas para o modelo GPT através da API.
+- **Envio de Perguntas:** Os usuários podem enviar perguntas para o modelo GPT através da Interface que se comunica com a API.
 - **Recebimento de Respostas:** Após enviar uma pergunta, os usuários recebem a resposta gerada pelo modelo GPT.
 - **Integração Facilitada:** A API é projetada para facilitar a integração com outras aplicações, permitindo uma comunicação eficiente com o chatbot.
 
