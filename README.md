@@ -1,6 +1,6 @@
 # API de Conexão com o ChatGPT
 
-Este repositório contém uma API para se comunicar facilmente com o modelo GPT (Generative Pre-trained Transformer) da OpenAI, permitindo fazer perguntas e receber respostas de forma eficiente.
+Este repositório contém uma API e uma interface para se comunicar facilmente com o modelo GPT (Generative Pre-trained Transformer) da OpenAI, permitindo fazer perguntas e receber respostas de forma eficiente.
 
 ## Descrição
 
