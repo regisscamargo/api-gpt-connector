@@ -23,4 +23,4 @@ WORKDIR /app
 
 CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
 
-EXPOSE 5500
+EXPOSE 5000
