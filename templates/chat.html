@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT - Ask</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .chat-container {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .chat-input {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .send-button {
+            width: 80px;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .chat-output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 100px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <input type="text" class="chat-input" id="user-input" placeholder="Digite sua pergunta...">
+        <button class="send-button" onclick="sendMessage()">Enviar</button>
+        <div class="chat-output" id="chat-output"></div>
+    </div>
+
+    <script>
+        function sendMessage() {
+           
+            var question = document.getElementById("user-input").value;
+            var chatOutput = document.getElementById("chat-output");
+            chatOutput.innerHTML += "<p><em>Processando...</em></p>";
+    
+            var message = {
+                messages: [{ role: "user", content: question }]
+            };
+    
+            fetch("/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(message)
+            })
+            .then(response => response.json())
+            .then(data => {
+
+                var processingMessage = document.querySelector("#chat-output p em");
+                if (processingMessage) {
+                    processingMessage.parentElement.remove();
+                }
+
+                chatOutput.innerHTML += "<p><strong>ChatGPT:</strong> " + data.response + "</p>";
+            })
+            .catch(error => {
+                console.error("Erro ao enviar mensagem:", error);
+            });
+    
+            document.getElementById("user-input").value = "";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,1 @@
+ACCESS_KEY_GPT = "sua-chave-aqui"
