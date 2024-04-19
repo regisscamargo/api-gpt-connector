@@ -33,7 +33,7 @@ O projeto é composto por uma API desenvolvida em Python, que se comunica com os
 5. Envie perguntas para a API e receba as respostas geradas pelo modelo GPT.
 
 **Executando o Docker**
-1. Caso queria, pode montar a imagem Docker execute os comandos abaixo
+1. Caso deseje, pode montar a imagem Docker execute os comandos abaixo
 2. docker build -t ms-chat-gpt . e depois de criado, executar docker run -t ms-chat-gpt
 3. Acesse **http://localhost:5500/index** - confira a porta destinada
 4. Envie perguntas para a API e receba as respostas geradas pelo modelo GPT.
