@@ -28,15 +28,15 @@ O projeto é composto por uma API desenvolvida em Python, que se comunica com os
 **Executando o aap.py**
 1. Clone este repositório em sua máquina local.
 2. Instale as dependências do projeto.
-3. Acesse a pasta chatgpt_api > constants.py e insira sua KEY válida gerada pelo GPT. **Exemplo: ACCESS_KEY_GPT = "sua-chave-aqui"**
-4. Execute a API usando o Flask, o app.py e acesse **http://localhost:5000/index** - confira a porta destinada em app.py
+3. Acesse a pasta  `chatgpt_api > constants.py ` e insira sua KEY válida gerada pelo GPT. **Exemplo: ACCESS_KEY_GPT = "sua-chave-aqui"** 
+4. Execute a API usando o Flask, o app.py e acesse  **http://localhost:5000/index**  - confira a porta destinada em app.py
 5. Envie perguntas para a API e receba as respostas geradas pelo modelo GPT.
 
 **Executando o Docker**
 1. Caso deseje, pode montar a imagem Docker execute os comandos abaixo
-2. Acesse a pasta chatgpt_api > constants.py e insira sua KEY válida gerada pelo GPT. **Exemplo: ACCESS_KEY_GPT = "sua-chave-aqui"**
-3. Execute docker build -t ms-chat-gpt . e depois de criado, executar docker compose up
-4. Acesse **http://127.0.0.1:5000** - confira a porta destinada em docker.compose.yaml
+2. Acesse a pasta  `chatgpt_api > constants.py ` e insira sua KEY válida gerada pelo GPT.  **Exemplo: ACCESS_KEY_GPT = "sua-chave-aqui"** 
+3. Execute  `docker build -t ms-chat-gpt . ` e depois de criado, executar  `docker compose up `
+4. Acesse  **http://127.0.0.1:5000** - confira a porta destinada em  `docker.compose.yaml `
 5. Envie perguntas para a API e receba as respostas geradas pelo modelo GPT.
 
 ## Autor
