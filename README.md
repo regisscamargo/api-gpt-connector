@@ -21,14 +21,22 @@ O projeto é composto por uma API desenvolvida em Python, que se comunica com os
 - **Python:** Linguagem de programação principal para implementação da API.
 - **OpenAI GPT:** Modelo de linguagem natural utilizado para gerar respostas às perguntas dos usuários.
 - **Flask:** Framework utilizado para criar a API web em Python.
+- **Docker:** Implantação e execução de aplicativos em contêineres, garantindo a portabilidade e consistência da aplicação em diferentes ambientes.
 
 ## Como Usar
 
+**Executando o aap.py**
 1. Clone este repositório em sua máquina local.
 2. Instale as dependências do projeto.
-3. Execute a API usando o Flask.
+3. Acesse a pasta chatgpt_api > constants.py e insira sua KEY válida gerada pelo GPT. **Exemplo: ACCESS_KEY_GPT = "sua-chave-aqui"**
+4. Execute a API usando o Flask, o app.py e acesse **http://localhost:5500/index** - confira a porta destinada
+5. Envie perguntas para a API e receba as respostas geradas pelo modelo GPT.
+
+**Executando o Docker**
+1. Caso queria, pode montar a imagem Docker execute os comandos abaixo
+2. docker build -t ms-chat-gpt . e depois de criado, executar docker run -t ms-chat-gpt
+3. Acesse **http://localhost:5500/index** - confira a porta destinada
 4. Envie perguntas para a API e receba as respostas geradas pelo modelo GPT.
 
 ## Autor
-
 Este projeto foi desenvolvido por Régis Camargo.
