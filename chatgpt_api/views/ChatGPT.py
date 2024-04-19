@@ -17,7 +17,7 @@ class ChatGPTView:
         self.tools = Tools()
 
     def send_message(self, message):
-        self.tools.logger("ChatGPTView - Send Message")
+        self.tools.logger(f"ChatGPTView - Send Message user:{message['messages'][0]['content']}")
 
         try:
             response = self.client.chat.completions.create(
