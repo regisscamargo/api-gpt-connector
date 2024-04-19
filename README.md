@@ -1,7 +1,6 @@
 # API de Conexão com o ChatGPT
 
-Este repositório contém uma API e uma interface para se comunicar facilmente com o modelo GPT (Generative Pre-trained Transformer) da OpenAI, permitindo fazer perguntas e receber respostas de forma eficiente.
-Importante ressaltar que é necessário que o usuário tenha acesso a uma API KEY gerado pela OpenAI, que tenha disponivel cotas para usar, caso não tenha será necessário solicitar e se a key não tiver validade o codigo retornará um erro de "insuficient_quota"
+ste repositório abriga uma API e uma interface projetadas para facilitar a comunicação com o modelo GPT (Generative Pre-trained Transformer) da OpenAI. Com esta ferramenta, os usuários podem fazer perguntas e receber respostas de maneira eficiente. É importante destacar que o acesso a uma chave de API fornecida pela OpenAI é necessário para utilizar este serviço. Caso o usuário não possua uma chave válida ou não disponha de cotas suficientes para utilização, o código retornará um erro indicando "insufficient_quota".
 
 ## Descrição
 
