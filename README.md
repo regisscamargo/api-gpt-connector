@@ -34,8 +34,8 @@ O projeto é composto por uma API desenvolvida em Python, que se comunica com os
 
 **Executando o Docker**
 1. Caso deseje, pode montar a imagem Docker execute os comandos abaixo
-2. docker build -t ms-chat-gpt . e depois de criado, executar docker run -t ms-chat-gpt
-3. Acesse **http://localhost:5000/index** - confira a porta destinada em docker.compose.yaml
+2. docker build -t ms-chat-gpt . e depois de criado, executar docker compose up
+3. Acesse **http://127.0.0.1:5000** - confira a porta destinada em docker.compose.yaml
 4. Envie perguntas para a API e receba as respostas geradas pelo modelo GPT.
 
 ## Autor
