@@ -25,7 +25,7 @@ O projeto é composto por uma API desenvolvida em Python, que se comunica com os
 
 ## Como Usar
 
-**Executando o aap.py**
+**Executando o app.py**
 1. Clone este repositório em sua máquina local.
 2. Instale as dependências do projeto.
 3. Acesse a pasta  `chatgpt_api > constants.py` e insira sua KEY válida gerada pelo GPT. **Exemplo: ACCESS_KEY_GPT = "sua-chave-aqui"** 
